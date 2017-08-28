@@ -65,6 +65,8 @@ configcontainer::configcontainer()
 		{ "ignore-mode",
 		    configdata("download", std::unordered_set<std::string>({
 		        "download", "display" })) },
+		{ "inoreader-login", configdata("", configdata_t::STR) },
+		{ "inoreader-password", configdata("", configdata_t::STR) },
 		{ "keep-articles-days", configdata("0", configdata_t::INT) },
 		{ "mark-as-read-on-hover", configdata("false", configdata_t::BOOL) },
 		{ "max-browser-tabs", configdata("10", configdata_t::INT) },
@@ -151,7 +153,7 @@ configcontainer::configcontainer()
 		{ "urls-source",
 		    configdata("local", std::unordered_set<std::string>({
 		        "local", "opml", "oldreader", "ttrss", "newsblur",
-		        "feedhq", "ocnews" })) },
+		        "feedhq", "ocnews", "inoreader" })) },
 		{ "use-proxy", configdata("no", configdata_t::BOOL) },
 		{ "user-agent", configdata("", configdata_t::STR) },
 
